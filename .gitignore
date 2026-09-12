@@ -1,0 +1,9 @@
+# Build caches and compiler toolchain (heavy, >5.8GB, contains files >100MB)
+_packaging/cargo-target/
+_packaging/staging/
+_packaging/toolchain/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.tmp
