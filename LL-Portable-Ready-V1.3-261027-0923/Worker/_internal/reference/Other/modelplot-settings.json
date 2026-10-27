@@ -1,0 +1,581 @@
+{
+  "basic": [
+    {
+      "key": "coordinateSystem",
+      "label": "Coordinate system",
+      "default": "Global",
+      "type": "text"
+    },
+    {
+      "key": "scale",
+      "label": "Scale 1 :",
+      "default": 200,
+      "type": "number",
+      "min": 1,
+      "max": 1000000,
+      "integer": true
+    },
+    {
+      "key": "nodeTag",
+      "label": "Node labels",
+      "default": false,
+      "type": "boolean"
+    },
+    {
+      "key": "upperTag",
+      "label": "Upper member tag",
+      "default": "None",
+      "type": "select",
+      "choices": [
+        "None",
+        "ElemNo",
+        "Section"
+      ]
+    },
+    {
+      "key": "lowerTag",
+      "label": "Lower member tag",
+      "default": "None",
+      "type": "select",
+      "choices": [
+        "None",
+        "ElemNo",
+        "Section"
+      ]
+    },
+    {
+      "key": "memberTagLegend",
+      "label": "Member tag legend",
+      "default": true,
+      "type": "boolean"
+    },
+    {
+      "key": "memberInvisible",
+      "label": "Hide members",
+      "default": false,
+      "type": "boolean"
+    },
+    {
+      "key": "areaTag",
+      "label": "Area labels",
+      "default": true,
+      "type": "boolean"
+    },
+    {
+      "key": "fillArea",
+      "label": "Fill areas",
+      "default": true,
+      "type": "boolean"
+    },
+    {
+      "key": "areaInvisible",
+      "label": "Hide areas",
+      "default": false,
+      "type": "boolean"
+    },
+    {
+      "key": "title",
+      "label": "Title",
+      "default": true,
+      "type": "boolean"
+    },
+    {
+      "key": "axes",
+      "label": "Global axes",
+      "default": true,
+      "type": "boolean"
+    },
+    {
+      "key": "dimensionLines",
+      "label": "Dimension lines",
+      "default": false,
+      "type": "boolean"
+    },
+    {
+      "key": "gridLines",
+      "label": "Grid lines",
+      "default": false,
+      "type": "boolean"
+    },
+    {
+      "key": "toleranceMm",
+      "label": "Plane tolerance (mm)",
+      "default": 10,
+      "type": "number",
+      "min": 0,
+      "max": 10000000,
+      "integer": true
+    },
+    {
+      "key": "split",
+      "label": "Split large planes",
+      "default": false,
+      "type": "boolean"
+    },
+    {
+      "key": "splitDistanceMm",
+      "label": "Split distance (mm)",
+      "default": 0,
+      "type": "number",
+      "min": 0,
+      "max": 10000000,
+      "integer": true
+    },
+    {
+      "key": "manualXY",
+      "label": "XY planes â€” Z (mm)",
+      "default": "",
+      "type": "text"
+    },
+    {
+      "key": "manualZY",
+      "label": "ZY planes â€” X (mm)",
+      "default": "",
+      "type": "text"
+    },
+    {
+      "key": "manualXZ",
+      "label": "XZ planes â€” Y (mm)",
+      "default": "",
+      "type": "text"
+    },
+    {
+      "key": "elevationMarkers",
+      "label": "Elevation labels and lines",
+      "default": true,
+      "type": "boolean"
+    },
+    {
+      "key": "manualPlanes",
+      "label": "Manual cutting planes",
+      "default": [],
+      "type": "planes"
+    },
+    {
+      "key": "viewNames",
+      "label": "Custom view names",
+      "default": {},
+      "type": "names"
+    },
+    {
+      "key": "viewScales",
+      "label": "Per-view scales",
+      "default": {},
+      "type": "scales"
+    },
+    {
+      "key": "splitPositions",
+      "label": "Split coordinates",
+      "default": [],
+      "type": "splits"
+    },
+    {
+      "key": "hideGroup",
+      "label": "Hide elements in group",
+      "default": "",
+      "type": "text"
+    },
+    {
+      "key": "selectedViews",
+      "label": "Selected views",
+      "default": [],
+      "type": "selectedViews"
+    }
+  ],
+  "advanced": [
+    {
+      "key": "Margin",
+      "label": "Margin",
+      "default": 160,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": true
+    },
+    {
+      "key": "TitleFontAsString",
+      "label": "Title Font ",
+      "default": "Tahoma, 30pt",
+      "type": "text"
+    },
+    {
+      "key": "TitlePrefixForPlanView",
+      "label": "Title Prefix For Plan View",
+      "default": "Plan @ EL",
+      "type": "text"
+    },
+    {
+      "key": "TitlePrefixForElevView",
+      "label": "Title Prefix For Elev View",
+      "default": "Elev @",
+      "type": "text"
+    },
+    {
+      "key": "TitlePrefixForElevViewOnColLine",
+      "label": "Title Prefix For Elev View On Col Line",
+      "default": "Elev @ Col Line",
+      "type": "text"
+    },
+    {
+      "key": "NodeColorAsArgb",
+      "label": "Node Color  (ARGB)",
+      "default": -16751616,
+      "type": "number",
+      "min": -2147483648,
+      "max": 2147483647,
+      "integer": true
+    },
+    {
+      "key": "NodeLineWeight",
+      "label": "Node Line Weight",
+      "default": 2,
+      "type": "number",
+      "min": 1,
+      "max": 100,
+      "integer": true
+    },
+    {
+      "key": "NodeTagFontAsString",
+      "label": "Node Tag Font ",
+      "default": "Tahoma, 16pt",
+      "type": "text"
+    },
+    {
+      "key": "NodeSize",
+      "label": "Node Size",
+      "default": 10,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": true
+    },
+    {
+      "key": "MemberColorAsArgb",
+      "label": "Member Color  (ARGB)",
+      "default": -16777077,
+      "type": "number",
+      "min": -2147483648,
+      "max": 2147483647,
+      "integer": true
+    },
+    {
+      "key": "MemberLineWeight",
+      "label": "Member Line Weight",
+      "default": 5,
+      "type": "number",
+      "min": 1,
+      "max": 100,
+      "integer": true
+    },
+    {
+      "key": "MemberTagFontAsString",
+      "label": "Member Tag Font ",
+      "default": "Tahoma, 20pt",
+      "type": "text"
+    },
+    {
+      "key": "AreaOpacity",
+      "label": "Area Opacity",
+      "default": 30,
+      "type": "number",
+      "min": 0,
+      "max": 100,
+      "integer": true
+    },
+    {
+      "key": "AreaColorAsArgb",
+      "label": "Area Color  (ARGB)",
+      "default": -7667712,
+      "type": "number",
+      "min": -2147483648,
+      "max": 2147483647,
+      "integer": true
+    },
+    {
+      "key": "AreaLineWeight",
+      "label": "Area Line Weight",
+      "default": 2,
+      "type": "number",
+      "min": 1,
+      "max": 100,
+      "integer": true
+    },
+    {
+      "key": "AreaTagFontAsString",
+      "label": "Area Tag Font ",
+      "default": "Tahoma, 20pt",
+      "type": "text"
+    },
+    {
+      "key": "DimLineColorAsArgb",
+      "label": "Dim Line Color  (ARGB)",
+      "default": -16777216,
+      "type": "number",
+      "min": -2147483648,
+      "max": 2147483647,
+      "integer": true
+    },
+    {
+      "key": "GridLineTagFontAsString",
+      "label": "Grid Line Tag Font ",
+      "default": "Tahoma, 30pt",
+      "type": "text"
+    },
+    {
+      "key": "DimLineTagFontAsString",
+      "label": "Dim Line Tag Font ",
+      "default": "Tahoma, 20pt",
+      "type": "text"
+    },
+    {
+      "key": "DimLineWeight",
+      "label": "Dim Line Weight",
+      "default": 2,
+      "type": "number",
+      "min": 1,
+      "max": 100,
+      "integer": true
+    },
+    {
+      "key": "DimLineArrowSize",
+      "label": "Dim Line Arrow Size",
+      "default": 20,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": true
+    },
+    {
+      "key": "BubbleDiameter",
+      "label": "Bubble Diameter",
+      "default": 60,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": true
+    },
+    {
+      "key": "UpsideSpace",
+      "label": "Upside Space",
+      "default": 400,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": true
+    },
+    {
+      "key": "LeftsideSpace",
+      "label": "Leftside Space",
+      "default": 400,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": true
+    },
+    {
+      "key": "BeyondDimLine",
+      "label": "Beyond Dim Line",
+      "default": 30,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": true
+    },
+    {
+      "key": "ExtLineGap",
+      "label": "Ext Line Gap",
+      "default": 8,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": true
+    },
+    {
+      "key": "GridDimHeightRatio",
+      "label": "Grid Dim Height Ratio",
+      "default": 0.7,
+      "type": "number",
+      "min": 0.01,
+      "max": 1,
+      "integer": false
+    },
+    {
+      "key": "NodeDimHeightRatio",
+      "label": "Node Dim Height Ratio",
+      "default": 0.4,
+      "type": "number",
+      "min": 0.01,
+      "max": 1,
+      "integer": false
+    },
+    {
+      "key": "AxesColorAsArgb",
+      "label": "Axes Color  (ARGB)",
+      "default": -16777216,
+      "type": "number",
+      "min": -2147483648,
+      "max": 2147483647,
+      "integer": true
+    },
+    {
+      "key": "AxesTextFontAsString",
+      "label": "Axes Text Font ",
+      "default": "Tahoma, 20pt",
+      "type": "text"
+    },
+    {
+      "key": "AxesPointerLength",
+      "label": "Axes Pointer Length",
+      "default": 80,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": true
+    },
+    {
+      "key": "AxesArrowSize",
+      "label": "Axes Arrow Size",
+      "default": 24,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": true
+    },
+    {
+      "key": "AxesLineWeight",
+      "label": "Axes Line Weight",
+      "default": 2,
+      "type": "number",
+      "min": 1,
+      "max": 100,
+      "integer": true
+    },
+    {
+      "key": "AxesXOffset",
+      "label": "Axes XOffset",
+      "default": 40,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": true
+    },
+    {
+      "key": "AxesYOffset",
+      "label": "Axes YOffset",
+      "default": 40,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": true
+    }
+  ],
+  "output": [
+    {
+      "key": "layout",
+      "label": "Images per page (rows x columns)",
+      "default": "2x1",
+      "type": "select",
+      "choices": [
+        "1x1",
+        "1x2",
+        "2x1",
+        "2x2"
+      ]
+    },
+    {
+      "key": "placementUnit",
+      "label": "Margins and spacing unit",
+      "default": "percent",
+      "type": "select",
+      "choices": [
+        "percent",
+        "cell"
+      ]
+    },
+    {
+      "key": "autoDelete",
+      "label": "Auto delete old images",
+      "default": true,
+      "type": "boolean"
+    },
+    {
+      "key": "dpi",
+      "label": "Image quality (DPI)",
+      "default": 200,
+      "type": "select",
+      "min": 0,
+      "max": 10000,
+      "integer": true,
+      "choices": [
+        96,
+        150,
+        200,
+        300,
+        600
+      ]
+    },
+    {
+      "key": "marginLeft",
+      "label": "Left margin",
+      "default": 2,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": false
+    },
+    {
+      "key": "marginRight",
+      "label": "Right margin",
+      "default": 2,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": false
+    },
+    {
+      "key": "marginTop",
+      "label": "Top margin",
+      "default": 2,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": false
+    },
+    {
+      "key": "marginBottom",
+      "label": "Bottom margin",
+      "default": 2,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": false
+    },
+    {
+      "key": "spacingX",
+      "label": "Horizontal spacing",
+      "default": 2,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": false
+    },
+    {
+      "key": "spacingY",
+      "label": "Vertical spacing",
+      "default": 2,
+      "type": "number",
+      "min": 0,
+      "max": 10000,
+      "integer": false
+    },
+    {
+      "key": "legacyGapPt",
+      "label": "Legacy gap (pt) — capture to convert",
+      "default": 0,
+      "type": "number",
+      "min": 0,
+      "max": 100,
+      "integer": false
+    }
+  ]
+}
